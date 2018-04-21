@@ -256,6 +256,7 @@ def number_of_stutters(s):
     return count
 
 
+
 def run_test_is_palindrome():
     """ Tests the   is_palindrome   function. """
     print()

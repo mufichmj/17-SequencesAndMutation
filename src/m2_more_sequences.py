@@ -256,7 +256,6 @@ def number_of_stutters(s):
     return count
 
 
-
 def run_test_is_palindrome():
     """ Tests the   is_palindrome   function. """
     print()
@@ -325,7 +324,7 @@ def is_palindrome(s):
       :type s: str
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ####################################################################
@@ -334,6 +333,15 @@ def is_palindrome(s):
     #   above are particularly good examples to work by hand.
     ####################################################################
     # ------------------------------------------------------------------
+    p_string = []
+    for k in range(len(s)-1, -1, -1):
+        p_string = p_string + [s[k]]
+
+    for k in range(len(s)):
+        if p_string[k] != s[k]:
+            return False
+
+    return True
 
 
 # ----------------------------------------------------------------------
